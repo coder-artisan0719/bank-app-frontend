@@ -5,8 +5,8 @@ const nextConfig = {
   
     env: {
       NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:4001",
-    },
-  
+  },  
+    
     async rewrites() {
       const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4001";
       return [
