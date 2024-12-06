@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🏦 Bank App Frontend
 
-## Getting Started
+This is the **Frontend** of a **Banking Application** built using **Next.js** and **TypeScript**. The app allows users to perform key banking operations such as depositing, withdrawing, transferring money to IBAN accounts, and viewing transaction histories.
 
-First, run the development server:
+🚀 **Live Demo**: [Bank App Frontend](https://bank-app-frontend-omega.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🔑 Features
+
+- **Responsive Design**: Optimized for devices with a minimum width of 360px.
+- **Deposit & Withdraw**: Manage deposits and withdrawals seamlessly.
+- **Transfer Money to IBAN**: Securely transfer funds to valid IBAN accounts.
+- **Account Statement**: View transaction history sorted by the most recent date.
+- **IBAN Validation**: Prevent transfers to non-IBAN accounts.
+- **Modern UI/UX**: Sleek, user-friendly design.
+
+---
+
+## 🗂 Project Structure
+
+```plaintext
+├── .env                       # Environment variables
+├── .gitignore                 # Files/folders ignored by version control
+├── netlify.toml               # Configuration for Netlify deployment
+├── next.config.mjs            # Next.js configuration
+├── public/                    # Static assets (images, logos, etc.)
+│   ├── favicon.png
+│   ├── images/
+│       ├── backgrounds/
+│       ├── logos/
+│       └── profile/
+├── src/                       # Application source code
+│   ├── app/                   # Next.js App Router
+│   │   ├── (DashboardLayout)  # Dashboard pages and layouts
+│   │   ├── api/               # API calls or services
+│   │   ├── components/        # Reusable components
+│   │   ├── css/               # Global and component-specific styles
+│   │   └── not-found.tsx      # Custom 404 page
+│   └── utils/                 # Utility files (themes, types, etc.)
+├── tailwind.config.ts         # Tailwind CSS configuration
+└── tsconfig.json              # TypeScript configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 📥 Prerequisites
+`Node.js (version 16 or higher)`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`npm (version 8 or higher)`
 
-## Learn More
+### 📦 Clone the Repository
+```
+git clone https://github.com/coder-artisan0719/bank-app-frontend.git
+cd bank-app-frontend
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 🛠 Install Dependencies
+```
+npm install
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔧 Start the Development Server
+```
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### 🌍 Environment Variables
 
-## Deploy on Vercel
+Add a .env file to configure the app. Example:
+```
+NEXT_PUBLIC_API_URL=https://bank-app-server-69ir.onrender.com
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🛡 Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+React
+Next.js
+Tailwind CSS
+ApexCharts
+```
