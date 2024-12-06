@@ -6,9 +6,9 @@ import { optData } from "../constants/data";
 
 function Form({
   opt,
-  data,
-  loading,
   transData,
+  loading,
+  data,
   handleAmount,
   handleData,
   handleOpt,
@@ -79,7 +79,7 @@ function Form({
           <div className="col-span-12 flex gap-3 mt-3 justify-center">
             <Button
               isProcessing={loading}
-              color={"primary"}
+              color={"success"}
               onClick={transData}
             >
               Submit

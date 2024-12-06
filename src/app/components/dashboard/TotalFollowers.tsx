@@ -115,7 +115,7 @@ const TotalFollowers = ({ data, text }: TotalFollowersProps) => {
                 <div className="h-5 bg-gray-400 rounded-full dark:bg-gray-700 w-20 mb-4"></div>
               </div>
             ) : (
-              `$ ${data}`
+              `$${data}`
             )}
           </h2>
         </div>

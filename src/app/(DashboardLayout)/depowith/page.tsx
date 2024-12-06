@@ -78,10 +78,10 @@ const depowithpage = () => {
   return (
     <Form
       {...{
-        transData,
         opt,
-        loading,
         data,
+        loading,
+        transData,
         handleAmount,
         handleData,
         handleOpt,
