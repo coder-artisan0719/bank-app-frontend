@@ -8,7 +8,7 @@ const nextConfig = {
   },  
     
     async rewrites() {
-      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4001";
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://bank-app-server-69ir.onrender.com";
       return [
         {
           source: "/api/:path*",
