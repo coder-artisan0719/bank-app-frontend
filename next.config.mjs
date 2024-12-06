@@ -1,16 +1,22 @@
-const nextConfig = {
-  reactStrictMode: false,
-  env: {
-      NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-  },
-  async rewrites() {
-      return [
-          {
-              source: '/api/:path*',
-              destination: `${process.env.NEXT_PUBLIC_API_URL}/:path*`,
-          },
-      ];
-  },
-};
+/** @type {import('next').NextConfig} */
 
-export default nextConfig;
+const nextConfig = {
+    reactStrictMode: true,
+  
+    env: {
+      NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || "http://localhost:4001",
+    },
+  
+    async rewrites() {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4001";
+      return [
+        {
+          source: "/api/:path*",
+          destination: `${apiUrl}/:path*`, // Ensure this is always a valid URL
+        },
+      ];
+    },
+  };
+  
+  export default nextConfig;
+  
