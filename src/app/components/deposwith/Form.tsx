@@ -15,7 +15,8 @@ function Form({
 }: FormProps) {
   return (
     <div className="rounded-lg dark:shadow-dark-md shadow-md bg-white dark:bg-darkgray p-6 relative w-full break-words overflow-x-auto">
-      <h5 className="card-title">My Account ${opt.total.toLocaleString()}</h5>
+      <h5 className="card-title">My Account</h5>
+      <span className="mt-3 text-xl text-black text-gray-500 font-bold">${opt.total.toLocaleString()}</span>
       <div className="mt-6">
         <div className="grid grid-cols-12 gap-30">
           <div className="col-span-12">

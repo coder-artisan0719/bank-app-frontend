@@ -14,7 +14,7 @@ const HistoryForm = ({ data, total, pages, setPages }: HistoryFormProps) => {
             <div className="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-20 mb-4"></div>
           </div>
         ) : (
-          <p className="card-subtitle">$ {total.toLocaleString()}</p>
+          <p className="mt-3 text-2xl text-black text-gray-700 font-bold">$ {total.toLocaleString()}</p>
         )}
         <div className="flex overflow-x-auto sm:justify-end justify-items-end">
           <Pagination

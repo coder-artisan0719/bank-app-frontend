@@ -107,9 +107,17 @@ const TotalFollowers = ({ data, text }: TotalFollowersProps) => {
           <h5 className="text-base opacity-70">Total {text}</h5>
         </div>
       </div>
-      <div className="grid grid-cols-12 gap-[24px] items-end mt-3">
-        <div className="xl:col-span-6 col-span-7">
-          <h2 className="text-3xl mb-3">
+
+      <div className="grid grid-cols-12 gap-1 items-center mt-3">
+        <div className="xl:col-span-7 col-span-8">
+          <h2
+            className="text-3xl font-bold whitespace-nowrap overflow-hidden"
+            style={{
+              fontSize: '2rem',
+              lineHeight: '1.2',
+              textAlign: 'left',
+            }}
+          >
             {data === "" ? (
               <div role="status" className="max-w-sm animate-pulse">
                 <div className="h-5 bg-gray-400 rounded-full dark:bg-gray-700 w-20 mb-4"></div>
@@ -119,8 +127,9 @@ const TotalFollowers = ({ data, text }: TotalFollowersProps) => {
             )}
           </h2>
         </div>
-        <div className="xl:col-span-6  col-span-5 ">
-          <div className="rounded-bars md:ps-7">
+        {/* Chart */}
+        <div className="xl:col-span-5 col-span-4 flex justify-end">
+          <div className="rounded-bars md:ps-7 w-full">
             <Chart
               options={ChartData}
               series={ChartData.series}

@@ -27,7 +27,7 @@ import { uniqueId } from "lodash";
 
 const SidebarContent: MenuItem[] = [
   {
-    heading: "Bank",
+    heading: "FinanceHub",
     children: [
       {
         name: "Statement",

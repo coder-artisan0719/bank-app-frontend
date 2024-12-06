@@ -4,7 +4,6 @@ import SidebarContent from "./Sidebaritems";
 import NavItems from "./NavItems";
 import NavCollapse from "./NavCollapse";
 import SimpleBar from "simplebar-react";
-import FullLogo from "../../shared/logo/FullLogo";
 import { Icon } from "@iconify/react";
 
 const MobileSidebar = () => {
@@ -15,14 +14,13 @@ const MobileSidebar = () => {
         aria-label="Sidebar with multi-level dropdown example"
       >
         <div className="mb-7 px-4 brand-logo">
-          <FullLogo />
         </div>
         <SimpleBar className="h-[calc(100vh_-_100px)]">
           <Sidebar.Items className="px-4">
             <Sidebar.ItemGroup className="sidebar-nav">
               {SidebarContent.map((item, index) => (
                 <React.Fragment key={index}>
-                  <h5 className="text-link font-semibold text-sm caption">
+                  <h5 className="text-link font-semibold text-xl mb-5 caption">
                     <span className="hide-menu">{item.heading}</span>
                   </h5>
                   <Icon
